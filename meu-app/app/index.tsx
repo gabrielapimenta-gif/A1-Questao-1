@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import {CardProduto} from '../src/Cardproduto'; 
+import {CardProduto} from '../src/CardProduto'; 
 import {listaProdutos} from '../src/produtos';
 
 export default function TelaInicial() {
     return (
-        <View style={styles.container}>
+        <View style={styles.contentContainer}>
             <Text style={styles.tituloPrincipal}>Lista de Produtos</Text>
 
             {listaProdutos.map((produto) => (
